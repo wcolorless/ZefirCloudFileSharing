@@ -31,6 +31,7 @@ namespace ZefirCloudFileServerLib.core.server.dispatcher
             {
                 try
                 {
+                    PathChecker.Check(messageType.Login);
                     switch (messageType.Type)
                     {
                         case MessageType.None:
